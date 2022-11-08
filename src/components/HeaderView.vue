@@ -6,27 +6,29 @@
                     <div class="logo">
                         <a href="/">
                             <img src="../assets/images/wskj-logo.svg" alt="logo">
+                            <p class="logo-text">wskj.design</p>
                         </a>
                     </div>
                 </div>
                 <div class="width50">
                     <div class="nav-menu">
                         <p class="wskj_text">wskj.design</p>
-                        <ul>
-                            <li>
-                                <a href="#">Projects</a>
-                            </li>
-                            <li>
-                                <a href="#">What we do</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Team</a>
-                            </li>
-                        </ul>
-
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#project">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#whatwedo">What we do</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#team">Team</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="btn-view">
                             <a href="#" class="btn btn-primary">Let’s talk</a>
                         </div>
@@ -56,13 +58,15 @@ export default ({
     methods:{
         handleScroll(){
             this.scrollPosition = window.scrollY
-            if(this.scrollPosition>= 150){
+            if(this.scrollPosition>= 100){
                 this.isSticky=true
             }else{
                 this.isSticky=false
             }
         }
     }
+
+    
 })
 
 </script>

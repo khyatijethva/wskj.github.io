@@ -3,7 +3,7 @@
         <HeaderView />
 
         <div class="home-page">
-            <section class="banner">
+            <section class="banner" id="banner">
                 <div class="container">
                     <div class="banner-text">
                         <h1>We Solve <br> Problems With <br> <span>Inventive</span> Design</h1>
@@ -18,7 +18,19 @@
                 </div>
             </section>
 
-            <section class="projects">
+            <section class="projects" id="project">
+                <div class="m-scroll">
+                    <div class="m-scroll__title">
+                        <div>
+                        <h1>
+                            <a href="https://dribbble.com/JulianoF">Likedin,</a> <a href="https://dribbble.com/JulianoF">Dribbble</a> &amp; <a href="https://dribbble.com/JulianoF">Instagram </a>&nbsp;
+                        </h1>
+                        <h1>
+                        <a href="https://dribbble.com/JulianoF">Likedin,</a> <a href="https://dribbble.com/JulianoF">Dribbble</a> &amp; <a href="https://dribbble.com/JulianoF">Instagram </a>&nbsp;
+                        </h1>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-wrapper">
                     <carousel :margin="65" :nav="false" :loop="false" :freeDrag="true" :stagePadding="0" :items="4" :center="true"
                     :responsive="{0:{items:1},575:{items:2},991:{items:3}}">
@@ -112,14 +124,12 @@
 <script>
 import carousel from 'vue-owl-carousel2'
 import HeaderView from '@/components/HeaderView.vue'
-// import FooterView from '@/components/FooterView.vue'
 
 export default ({
     name: "HomePageView",
     components: {
         carousel,
         HeaderView,
-        // FooterView
     },
 });
 </script>
