@@ -182,21 +182,19 @@ h1 span::after{
 .btn {
     color: var(--white);
     cursor: pointer;
-    display: inline-block;
-    font-size: 1.25vw;
-    padding: 0.9vw 1.2vw;
+    font-size: 24px;
+    padding: 14px 24px;
     position: relative;
     align-self: center;
     font-weight: 600;
-    min-width: 12.5vw;
+    min-width: 240px;
     border: 2px solid var(--white);
     z-index: 1;
-    box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
     transform-origin: left bottom;
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
+    height: 72px;
+    display: flex;
+    align-items: center;
 }
 .btn:before, .btn:after {
     border: 2px var(--white) solid;
@@ -206,38 +204,34 @@ h1 span::after{
     z-index: -1;
 }
 .btn:before {
-    right: -1.2vw;
-    top: 0.42vw;
-    width: 1vw;
+    right: -21px;
+    top: 7px;
+    width: 16px;
     height: 100%;
     transform: skewY(45deg);
 }
 .btn:after {
-    bottom: -1.2vw;
-    right: -0.62vw;
+    bottom: -21px;
+    right: -11px;
     width: 100%;
-    height: 1vw;
+    height: 16px;
     transform: skewX(45deg);
 }
 .btn.btn-arrow {
     min-width: auto;
-    margin-left: 2.05vw;
-}
-.btn.btn-arrow img {
-    position: relative;
-    top: 2px;
+    margin-left: 36px;
+    width: 72px;
 }
 .btn.btn-arrow::before {
     right: auto;
-    left: -1.2vw;
+    left: -21px;
     transform: skewY(-45deg);
 }
 .btn.btn-arrow::after {
     transform: skewX(-45deg);
     right: 0;
-    left: -0.62vw;
-    height: 0.95vw;
-    bottom: -1.15vw;
+    left: -11px;
+    height: 16px;
 }
 
 /* header css start here  */
@@ -382,19 +376,50 @@ section.banner {
     font-family: var(--fontheading);
     font-size: 1vw;
 }
+
 .btn-inspire {
+    background: var(--white);
+    cursor: pointer;
+    position: relative;
     border: 1px solid var(--black);
-    width: 3.4vw;
-    height: 3.4vw;
+    width: 3.438vw;
+    height: 3.438vw;
+    z-index: 1;
+    transform-origin: left bottom;
+    transition: all 200ms ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    background: var(--white);
-    margin: 0 0 14px 14px;
+    margin: 0 0 0.833vw 0.833vw;
 }
-
-
+.btn-inspire:before, .btn-inspire:after {
+    border: 1px var(--black) solid;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    transition: all 200ms ease-in-out;
+}
+.btn-inspire:hover{
+    margin: 0;
+}
+.btn-inspire:hover::before, .btn-inspire:hover::after{
+    opacity: 0;
+}
+.btn-inspire::before {
+    left: -0.8vw;
+    transform: skewY(-45deg);
+    width: 0.625vw;
+    height: 3.35vw;
+    top: 0.313vw;
+}
+.btn-inspire::after {
+    transform: skewX(-45deg);
+    right: 0.3vw;
+    height: 0.625vw;
+    bottom: -0.8vw;
+    width: 3.229vw;
+}
 
 /* ======================== project css start here ============================== */
 .m-scroll {
