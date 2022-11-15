@@ -234,7 +234,7 @@
         </div>
 
         
-        <!-- <FooterView /> -->
+        <FooterView />
     </div>
 </template>
   
@@ -242,12 +242,14 @@
 <script>
 import carousel from 'vue-owl-carousel2'
 import HeaderView from '@/components/HeaderView.vue'
+import FooterView from '@/components/FooterView.vue'
 
 export default ({
     name: "HomePageView",
     components: {
         carousel,
         HeaderView,
+        FooterView
     },
 });
 </script>

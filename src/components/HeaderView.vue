@@ -30,7 +30,8 @@
                             </ul>
                         </nav>
                         <div class="btn-view">
-                            <a href="#" class="btn btn-primary">Let’s talk</a>
+                            <a class="btn btn-primary" href="#">Let’s talk</a>
+                            <a href="#" class="btn btn-arrow"><img src="../assets/images/btn.svg" alt="button"></a>
                         </div>
                     </div>
                 </div>
